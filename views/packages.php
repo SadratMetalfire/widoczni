@@ -10,7 +10,7 @@ $packages = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <?php if ($packages): ?>
-    <table class="table table-striped table-bordered table-hover">
+    <table class="table table-striped table-bordered table-hover sortable" id="packageTable">
         <thead class="table-light">
             <tr>
                 <th>Nazwa</th>

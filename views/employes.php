@@ -64,7 +64,7 @@ if ($employe_id) {
     $clients = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     if ($clients): ?>
-        <table class="table table-striped table-bordered table-hover">
+        <table class="table table-striped table-bordered table-hover sortable" id="employesTable">
             <thead class="table-light">
                 <tr>
                     <th>Nazwa</th>

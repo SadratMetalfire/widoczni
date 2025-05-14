@@ -20,7 +20,7 @@ $contacts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <?php if ($contacts): ?>
-    <table class="table table-striped table-bordered table-hover">
+    <table class="table table-striped table-bordered table-hover sortable" id="contactsTable">
         <thead class="table-light">
             <tr>
                 <th>Imię i nazwisko</th>

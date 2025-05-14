@@ -30,7 +30,7 @@ $clients = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <?php if ($clients): ?>
-    <table class="table table-striped table-bordered table-hover">
+    <table class="table table-striped table-bordered table-hover sortable" id="clientTable">
         <thead class="table-light">
             <tr>
                 <th>Nazwa Klienta</th>
