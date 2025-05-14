@@ -3,6 +3,8 @@
 <h2>Lista Pracowników</h2>
 
 <?php
+// TODO: Change file name and path to reflect exact purpose of this view
+
 // get all employes for select
 $stmt = $pdo->query("SELECT id, first_name, last_name FROM employes ORDER BY first_name, last_name");
 $employes = $stmt->fetchAll(PDO::FETCH_ASSOC);

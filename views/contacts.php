@@ -3,6 +3,8 @@
 <h2>Lista Osób Kontaktowych</h2>
 
 <?php
+// TODO: Change file name and path to reflect exact purpose of this view
+
 $sql = "SELECT 
     con.id,
     con.name,
