@@ -39,7 +39,7 @@ if ($employe_id) {
 
     $employe_name = htmlspecialchars($employe['first_name'] . ' ' . $employe['last_name']);
 
-    echo "<h3>Klienci przypisani do: $employe_name</h3>";
+    echo "<p>Klienci przypisani do: <b>$employe_name</b></p>";
 
     // get data for the table
     $sql = " SELECT 

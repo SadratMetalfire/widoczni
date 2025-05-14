@@ -5,10 +5,13 @@
     // NOTE: Routing and menu generation can be done in a different automated way
     // using global array (router.php)
     // also could use URI and paths insted of GET variables 
-    
+
     switch ($page) {
         case 'add_client':
             include 'views/add_client.php';
+            break;
+        case 'add_client_action';
+            include 'actions/add_client.php';
             break;
         case 'clients':
             include 'views/clients.php';
