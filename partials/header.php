@@ -21,7 +21,7 @@
 
         <nav>
             <ul>
-                <li><a href="?page=clients" class="<?= ($page =='clients' ? 'active' : '') ?>">Klienci</a></li>
+                <li><a href="?page=clients" class="<?= ($page == 'clients' ? 'active' : '') ?>">Klienci</a></li>
             </ul>
             <ul>
                 <li><a href="?page=contacts" class="<?= ($page == 'contacts' ? 'active' : '') ?>">Kontakty</a></li>

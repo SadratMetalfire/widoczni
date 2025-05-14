@@ -1,1 +1,3 @@
-<?php include 'includes/db.php'; ?>
+<?php include_once 'includes/db.php'; ?>
+
+<h2>Dodaj Klienta</h2>
