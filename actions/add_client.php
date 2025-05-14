@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // TODO: Add more validation mainly for data types and length
     if ($name === '' || $nip === '') {
-        echo "<p>Uzupełnij wymagane pola</p>";
+        echo '<div class="alert alert-danger">Uzupełnij wymagane pola</div>';
         return;
     }
 
@@ -24,8 +24,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'notes' => $notes,
     ]);
 
-    echo "<p>Dodano klienta: <b>" . htmlspecialchars($name) . "</b>.</p>";
-    echo "<p><a href='?page=add_client'>Dodaj kolejnego klienta</a> | <a href='?page=clients'>Lista klientów</a></p>";
+    echo '<div class="container mt-4"><div class="alert alert-success">Dodano klienta: <b>' . htmlspecialchars($name) . '</b>.</div></div>';
+    echo '<div class="container"><a href="?page=add_client" class="btn btn-primary">Dodaj kolejnego</a> <a href="?page=clients" class="btn btn-primary">Lista klientów</a></div>';
 } else {
-    echo "<p style='color:red;'>Nieprawidłowe żądanie.</p>";
+    echo '<div class="container mt-4"><div class="alert alert-danger">Nie udało się dodać klienta</div></div>';
 }

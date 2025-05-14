@@ -1,6 +1,6 @@
 <?php include_once 'includes/db.php'; ?>
 
-<h2 class="mb-4">Lista Pakietów</h2>
+<h2 class="mb-4">Lista dostępnych pakietów.</h2>
 
 <?php
 $sql = "SELECT id, name, price, currency, description FROM packages ORDER BY name";

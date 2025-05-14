@@ -1,6 +1,6 @@
 <?php include_once 'includes/db.php'; ?>
 
-<h2 class="mb-4">Lista Klientów</h2>
+<h2 class="mb-4">Lista klientów wraz z przypisanymi pakietami, osobami kontaktowymi i opiekunami.</h2>
 
 <?php
 // TODO: Change file name and path to reflect exact purpose of this view

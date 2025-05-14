@@ -1,6 +1,6 @@
 <?php include_once 'includes/db.php'; ?>
 
-<h2 class="mb-4">Lista Pracowników</h2>
+<h2 class="mb-4">Lista klientów przypisanych do konkretnego pracownika.</h2>
 
 <?php
 // TODO: Change file name and path to reflect exact purpose of this view
