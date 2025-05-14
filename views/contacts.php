@@ -1,6 +1,6 @@
 <?php include_once 'includes/db.php'; ?>
 
-<h2>Lista Osób Kontaktowych</h2>
+<h2 class="mb-4">Lista Osób Kontaktowych</h2>
 
 <?php
 // TODO: Change file name and path to reflect exact purpose of this view
@@ -20,8 +20,8 @@ $contacts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <?php if ($contacts): ?>
-    <table class="table" border="1">
-        <thead>
+    <table class="table table-striped table-bordered table-hover">
+        <thead class="table-light">
             <tr>
                 <th>Imię i nazwisko</th>
                 <th>Telefon</th>
@@ -41,7 +41,7 @@ $contacts = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </tbody>
     </table>
 <?php else:  ?>
-    <p>Nie znalezion osób Kontaktowych</p>
+    <p class="text-center">Nie znalezion osób Kontaktowych</p>
 <?php endif; ?>
 
 <?php $pdo = null; ?>

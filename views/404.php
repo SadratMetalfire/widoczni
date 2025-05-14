@@ -1,1 +1,1 @@
-404 Strona nie istnieje!
+<div class="alert alert-danger">404 Strona nie istnieje!</div>

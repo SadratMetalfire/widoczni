@@ -1,6 +1,6 @@
 <?php include_once 'includes/db.php'; ?>
 
-<h2>Lista Klientów</h2>
+<h2 class="mb-4">Lista Klientów</h2>
 
 <?php
 // TODO: Change file name and path to reflect exact purpose of this view
@@ -30,8 +30,8 @@ $clients = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <?php if ($clients): ?>
-    <table class="table" border="1">
-        <thead>
+    <table class="table table-striped table-bordered table-hover">
+        <thead class="table-light">
             <tr>
                 <th>Nazwa Klienta</th>
                 <th>NIP</th>
@@ -57,7 +57,7 @@ $clients = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </tbody>
     </table>
 <?php else:  ?>
-    <p>Nie znalezion klientów</p>
+    <p class="text-center">Nie znalezion klientów</p>
 <?php endif; ?>
 
 <?php $pdo = null; ?>
