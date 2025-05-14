@@ -5,9 +5,7 @@
     // NOTE: Routing and menu generation can be done in a different automated way
     // using global array (router.php)
     // also could use URI and paths insted of GET variables 
-
-    $page = isset($_GET['page']) ? $_GET['page'] : 'clients';
-
+    
     switch ($page) {
         case 'add_client':
             include 'views/add_client.php';

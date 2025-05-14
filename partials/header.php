@@ -13,21 +13,27 @@
 
     <header>
         Header/Menu
+
+        <?php
+        // check current page here to mark active in menu
+        $page = isset($_GET['page']) ? $_GET['page'] : 'clients';
+        ?>
+
         <nav>
             <ul>
-                <li><a href="?page=clients">Klienci</a></li>
+                <li><a href="?page=clients" class="<?= ($page =='clients' ? 'active' : '') ?>">Klienci</a></li>
             </ul>
             <ul>
-                <li><a href="?page=contacts">Kontakty</a></li>
+                <li><a href="?page=contacts" class="<?= ($page == 'contacts' ? 'active' : '') ?>">Kontakty</a></li>
             </ul>
             <ul>
-                <li><a href="?page=employes">Pracownicy</a></li>
+                <li><a href="?page=employes" class="<?= ($page == 'employes' ? 'active' : '') ?>">Pracownicy</a></li>
             </ul>
             <ul>
-                <li><a href="?page=packages">Pakiety</a></li>
+                <li><a href="?page=packages" class="<?= ($page == 'packages' ? 'active' : '') ?>">Pakiety</a></li>
             </ul>
             <ul>
-                <li><a href="?page=add_client">Dodaj klienta</a></li>
+                <li><a href="?page=add_client" class="<?= ($page == 'add_client' ? 'active' : '') ?>">Dodaj klienta</a></li>
             </ul>
         </nav>
     </header>
