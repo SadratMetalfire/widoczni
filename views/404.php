@@ -1,0 +1,1 @@
+404 Strona nie istnieje!
